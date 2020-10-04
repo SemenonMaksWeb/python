@@ -8,7 +8,7 @@ DEFAULT_PAGE_SIZE = 12
 class CustomPagination(PageNumberPagination):
     page = DEFAULT_PAGE
     page_size = DEFAULT_PAGE_SIZE
-    page_size_query_param = 'limit  '
+    page_size_query_param = 'limit'
     def get_paginated_response(self, data):
         return Response({
             'links': {

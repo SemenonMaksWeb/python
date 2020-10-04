@@ -10,7 +10,6 @@ urlpatterns = [
 
 	path('author/list/', AuthorList.as_view()),
     path('author/<int:pk>', AuthorDetails.as_view()),
-    
 
     re_path(r'filter/author/(?P<id>.+)/', AuthorListBooks.as_view()),
     re_path(r'filter/genre/(?P<id>.+)/', GenreListBooks.as_view()),
